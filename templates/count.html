@@ -1,0 +1,18 @@
+Ther are <h1>{{ count }}</h1> word 
+
+<br />
+<a href= "{% url 'home' %}"> Retry </a>
+<h1>Your text</h1>
+<a href= "{% url 'about' %}"> About </a>
+<br />
+{{ fulltext }}
+
+
+<h1>And here are the sorted one </h1>
+
+{% for word, counttotall in sortedword %}
+
+{{ word }} = {{ counttotall }}
+<br />
+
+{% endfor %}
